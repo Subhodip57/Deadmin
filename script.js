@@ -1,6 +1,6 @@
 // --- 1. Typewriter Effect ---
-// REMEMBER TO CHANGE THIS TO YOUR NAME
-const nameToType = "Hi, Subhodip Here."; 
+// REMEMBER TO CHANGE THIS TO YOUR ACTUAL NAME!
+const nameToType = "Hi, I'm [Your Name]."; 
 const typewriterElement = document.getElementById("typewriter");
 let index = 0;
 
@@ -42,7 +42,6 @@ window.addEventListener("scroll", () => {
     sections.forEach((section) => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
-        // Check if the scroll position is within the current section
         if (scrollY >= (sectionTop - 150)) {
             current = section.getAttribute("id");
         }
